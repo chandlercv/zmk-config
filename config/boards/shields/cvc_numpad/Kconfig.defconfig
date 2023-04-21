@@ -1,0 +1,6 @@
+if SHIELD_CVC_NUMPAD
+
+config ZMK_KEYBOARD_NAME
+    default "CVC Numpad"
+
+endif
