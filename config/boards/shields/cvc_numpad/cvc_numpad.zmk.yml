@@ -1,0 +1,8 @@
+file_format: "1"
+id: cvc_numad
+name: CVC Numpad
+type: shield
+# url: https://nullbits.co/tidbit/
+requires: [pro_micro]
+features:
+  - keys
