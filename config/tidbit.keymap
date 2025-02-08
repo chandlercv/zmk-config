@@ -44,14 +44,14 @@
 
         default_layer {
             bindings = <
-                                &kp KP_NUMLOCK  &kp KP_ASTERISK &kp KP_MINUS
-                &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp LC(C)
-                &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_SLASH
-                &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &lt 1 KP_ENTER
-                &kp C_MUTE      &kp KP_NUMBER_0 &kp KP_DOT      &kp KP_ENTER
+                            &kp LC(X)       &kp F19         &kp LC(N)
+                &kp F18     &kp LC(W)       &kp LS(LC(T))   &kp LC(S)
+                &kp LA(X)   &kp F20         &kp F21         &kp LC(S)
+                &kp LA(X)   &kp F22         &kp F23         &lt 1 F24
+                &kp LG(UP)  &kp F14         &kp F15         &kp LC(C)
             >;
 
-            sensor-bindings = <&inc_dec_kp A B &inc_dec_kp C D &inc_dec_kp E F &inc_dec_kp G H>;
+            sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LS(LC(GRAVE)) LC(GRAVE) &inc_dec_kp LS(LC(TAB)) LC(TAB) &inc_dec_kp LG(LEFT) LG(RIGHT)>;
         };
 
          func_layer {
