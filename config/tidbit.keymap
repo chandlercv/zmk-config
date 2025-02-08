@@ -79,7 +79,7 @@
 
         window_right: window_right {
             compatible = "zmk,behavior-macro";
-            label = "Window Left";
+            label = "Window Right";
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp RIGHT>
@@ -87,5 +87,4 @@
                 ;
         };
     };
-}
-
+};
