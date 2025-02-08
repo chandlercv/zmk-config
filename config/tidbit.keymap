@@ -48,7 +48,7 @@
                 &kp LG(UP)  &kp F14         &kp F15         &kp LC(C)
             >;
 
-            sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LC(GRAVE) LS(LC(GRAVE)) &inc_dec_kp LC(TAB) LS(LC(TAB)) &macro_window_right &macro_window_left>;
+            sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LC(GRAVE) LS(LC(GRAVE)) &inc_dec_kp LC(TAB) LS(LC(TAB)) &window_right &window_left>;
         };
 
          func_layer {
