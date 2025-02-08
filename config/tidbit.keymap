@@ -34,7 +34,7 @@
 };
 
 &rgb_ug {
-    #sensor-binding-cells = <1>;
+    #sensor-binding-cells = <0>;
 };
 
 
