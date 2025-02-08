@@ -33,6 +33,9 @@
     sensors = <&encoder_1 &encoder_2 &encoder_3 &encoder_4>;
 };
 
+&rgb_ug {
+    #sensor-binding-cells = <1>;
+};
 
 
 /{
@@ -43,10 +46,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp LC(S)>, <&kp LC(LS(S))>, <&kp LC(LA(S))>;
         };
-    };
-
-    &rgb_ug {
-        #sensor-binding-cells = <1>;
     };
 
     keymap {
