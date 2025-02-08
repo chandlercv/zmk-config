@@ -35,7 +35,7 @@
 
 
 
-{
+/{
     behaviors {
         td0: save {
             compatible = "zmk,behavior-tap-dance";
