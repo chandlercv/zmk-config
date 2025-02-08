@@ -33,11 +33,6 @@
     sensors = <&encoder_1 &encoder_2 &encoder_3 &encoder_4>;
 };
 
-&rgb_ug {
-    #sensor-binding-cells = <1>;
-};
-
-
 /{
     behaviors {
         td0: save {
@@ -45,6 +40,24 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LC(S)>, <&kp LC(LS(S))>, <&kp LC(LA(S))>;
+        };
+
+        rgb_bright: rgb_bright {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
+
+        rgb_hue: rgb_hue {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+        };
+
+        rgb_sat: rgb_sat {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
         };
     };
 
@@ -72,7 +85,7 @@
                 &kp C_MUTE      &out OUT_TOG    &bt BT_PRV          &bt BT_NXT
              >;
 
-             sensor-bindings = <&rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD &rgb_ug RGB_BRI &rgb_ug RGB_BRD &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+             sensor-bindings = <&rgb_hue &rgb_sat &rgb_bright &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
     };
 };
