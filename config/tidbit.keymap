@@ -64,7 +64,7 @@
              bindings = <
                                 &soft_off       &rgb_ug RGB_TOG     &bootloader
                 &none           &out OUT_USB    &out OUT_BLE        &bt BT_CLR
-                &none           &bt BT_SEL 3    &bt BT_SEl 0        &bt BT_CLR
+                &none           &bt BT_SEL 3    &bt BT_SEL 0        &bt BT_CLR
                 &none           &bt BT_SEL 1    &bt BT_SEL 2        &trans
                 &kp C_MUTE      &out OUT_TOG    &bt BT_PRV          &bt BT_NXT
              >;
