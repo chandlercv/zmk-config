@@ -69,7 +69,7 @@
                 &kp C_MUTE      &out OUT_TOG    &bt BT_PRV          &bt BT_NXT
              >;
 
-             sensor-bindings = <&rgb_ug RGB_HUI RGB_HUD &rgb_ug RGB_SAI RGB_SAD &rgb_ug RGB_BRI RGB_BRD &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+             sensor-bindings = <&rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI &rgb_ug RGB_SAD &rgb_ug RGB_BRI &rgb_ug RGB_BRD &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
     };
 };
