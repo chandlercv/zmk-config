@@ -63,13 +63,13 @@
          func_layer {
              bindings = <
                                 &soft_off       &rgb_ug RGB_TOG     &bootloader
-                &out OUT_TOG    &out OUT_USB    &out OUT_BLE        &bt BT_CLR
-                &bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT          &bt BT_CLR
-                &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3        &trans
-                &kp C_MUTE      &none           &none               &none
+                &none           &out OUT_USB    &out OUT_BLE        &bt BT_CLR
+                &none           &bt BT_SEL 3    &bt BT_SEl 0        &bt BT_CLR
+                &none           &bt BT_SEL 1    &bt BT_SEL 2        &trans
+                &kp C_MUTE      &out OUT_TOG    &bt BT_PRV          &bt BT_NXT
              >;
 
-             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+             sensor-bindings = <&rgb_ug RGB_HUI RGB_HUD &rgb_ug RGB_SAI RGB_SAD &rgb_ug RGB_BRI RGB_BRD &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
     };
 };
