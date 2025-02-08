@@ -34,7 +34,7 @@
 };
 
 &rgb_ug {
-    #sensor-binding-cells = <0>;
+    #sensor-binding-cells = <1>;
 };
 
 
@@ -77,30 +77,3 @@
     };
 };
 
-/ {
-    macros {
-        window_left: window_left {
-            compatible = "zmk,behavior-macro";
-            label = "Window Left";
-            #sensor-binding-cells = <0>;
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-
-        window_right: window_right {
-            compatible = "zmk,behavior-macro";
-            label = "Window Right";
-            #sensor-binding-cells = <0>;
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LGUI>
-                ;
-        };
-    };
-};
