@@ -38,9 +38,7 @@
     sensors = <&encoder_1 &encoder_2 &encoder_3 &encoder_4>;
 };
 
-&soft_off {
-    hold-time-ms = <5000>; // Only turn off it the key is held for 5 seconds or longer.
-};
+
 
 / {
     keymap {
@@ -55,8 +53,7 @@
                 &kp LG(UP)  &kp F14         &kp F15         &kp LC(C)
             >;
 
-            sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LS(LC(GRAVE)) LC(GRAVE) &inc_dec_kp LS(LC(TAB)) LC(TAB) &inc_dec_kp LG(LEFT) LG(RIGHT)>;
-        };
+            sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LS(LC(GRAVE)) LC(GRAVE) &inc_dec_kp LS(LC(TAB)) LC(TAB) &inc_dec_kp LG(LEFT) LG(RIGHT)>;        };
 
          func_layer {
              bindings = <
