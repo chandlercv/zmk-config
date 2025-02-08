@@ -15,12 +15,6 @@
 &encoder_1 {
     status = "okay";
 };
-/*
-&encoder_1_top_left {
-    status = "okay";
-};
-*/
-
 
 &encoder_2 {
     status = "okay";
@@ -54,7 +48,7 @@
                 &kp LG(UP)  &kp F14         &kp F15         &kp LC(C)
             >;
 
-            sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LC(GRAVE) LS(LC(GRAVE)) &inc_dec_kp LC(TAB) LS(LC(TAB)) &inc_dec_kp LG(LEFT) LG(RIGHT)>;        };
+            sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LC(GRAVE) LS(LC(GRAVE)) &inc_dec_kp LC(TAB) LS(LC(TAB)) &inc_dec_kp &macro_window_right &macro_window_left ;        };
 
          func_layer {
              bindings = <
@@ -69,3 +63,28 @@
          };
     };
 };
+
+/ {
+    macros {
+        window_left: window_left {
+            compatible = "zmk,behavior-macro";
+            label = "Window Left";
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+
+        window_right: window_right {
+            compatible = "zmk,behavior-macro";
+            label = "Window Left";
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+    }
+}
+
