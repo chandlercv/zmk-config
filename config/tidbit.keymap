@@ -54,11 +54,11 @@
                 &kp LG(UP)  &kp F14         &kp F15         &kp LC(C)
             >;
 
-            sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LS(LC(GRAVE)) LC(GRAVE) &inc_dec_kp LS(LC(TAB)) LC(TAB) &inc_dec_kp LG(LEFT) LG(RIGHT)>;        };
+            sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LC(GRAVE) LS(LC(GRAVE)) &inc_dec_kp LC(TAB) LS(LC(TAB)) &inc_dec_kp LG(LEFT) LG(RIGHT)>;        };
 
          func_layer {
              bindings = <
-                                &soft_off       &rgb_ug RGB_TOG     &bootloader
+                                &sys_reset      &rgb_ug RGB_TOG     &bootloader
                 &out OUT_TOG    &out OUT_USB    &out OUT_BLE        &none
                 &bt BT_SEL 0    &bt BT_PRV      &bt BT_NXT          &bt BT_CLR
                 &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3        &trans
