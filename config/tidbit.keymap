@@ -70,6 +70,7 @@
         window_left: window_left {
             compatible = "zmk,behavior-macro";
             label = "Window Left";
+            #sensor-binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp LEFT>
@@ -80,6 +81,7 @@
         window_right: window_right {
             compatible = "zmk,behavior-macro";
             label = "Window Right";
+            #sensor-binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
                 , <&macro_tap &kp RIGHT>
