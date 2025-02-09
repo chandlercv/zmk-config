@@ -131,7 +131,7 @@
             bindings = <
                             &kp LC(X)       &td_f24         &td_new
                 &td_f20     &td_close       &kp LS(LC(T))   &td_save
-                &kp LA(X)   &td_f21         &td_f23         &td_save
+                &kp LA(X)   &td_f21         &td_f22         &td_save
                 &kp LA(X)   &td_f15         &td_f20         &lt 1 F23
                 &kp LG(UP)  &td_f13         &td_f14         &kp LC(C)
             >;
