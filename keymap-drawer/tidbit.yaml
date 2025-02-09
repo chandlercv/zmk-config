@@ -1,0 +1,42 @@
+layout: {qmk_keyboard: nullbitsco/tidbit}
+layers:
+  default:
+  - Ctl+X
+  - '&td_f24'
+  - '&td_new'
+  - '&td_f20'
+  - '&td_close'
+  - Sft+Ctl+T
+  - '&td_save'
+  - Alt+X
+  - '&td_f21'
+  - '&td_f23'
+  - '&td_save'
+  - Alt+X
+  - '&td_f15'
+  - '&td_f20'
+  - {t: F23, h: func}
+  - Gui+UP
+  - '&td_f13'
+  - '&td_f14'
+  - Ctl+C
+  func:
+  - '&soft_off'
+  - RGB TOG
+  - '&bootloader'
+  - ''
+  - OUT USB
+  - OUT BLE
+  - BT CLR
+  - ''
+  - {t: BT, h: '3'}
+  - {t: BT, h: '0'}
+  - BT CLR
+  - ''
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {type: held}
+  - MUTE
+  - OUT TOG
+  - BT PRV
+  - BT NXT
