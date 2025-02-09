@@ -56,6 +56,55 @@
             bindings = <&kp LC(W)>, <&kp LA(F4)>;
         }
 
+        td_f13: f13 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F13>, <&kp LC(F13)>;
+        };
+
+        td_f14: f14 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F14>, <&kp LC(F14)>;
+        };
+
+        td_f15: f15 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F15>, <&kp LC(F15)>;
+        };
+
+        td_f20: f20 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F20>, <&kp LC(F20)>;
+        };
+
+        td_f21: f21 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F21>, <&kp LC(F21)>;
+        };
+
+        td_f22: f22 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F22>, <&kp LC(F22)>;
+        };
+
+        td_f24: f24 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F24>, <&kp LC(F24)>;
+        };
+
         rgb_bright: rgb_bright {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -80,11 +129,11 @@
 
         default_layer {
             bindings = <
-                            &kp LC(X)       &kp F24         &td_new
-                &kp F20     &td_close       &kp LS(LC(T))   &td_save
-                &kp LA(X)   &kp F21         &kp F22         &td_save
-                &kp LA(X)   &kp F15         &kp F20         &lt 1 F23
-                &kp LG(UP)  &kp F13         &kp F14         &kp LC(C)
+                            &kp LC(X)       &td_f24         &td_new
+                &td_f20     &td_close       &kp LS(LC(T))   &td_save
+                &kp LA(X)   &td_f21         &td_f23         &td_save
+                &kp LA(X)   &td_f15         &td_f20         &lt 1 F23
+                &kp LG(UP)  &td_f13         &td_f14         &kp LC(C)
             >;
 
             sensor-bindings = <&inc_dec_kp F16 F17 &inc_dec_kp LC(TAB) LS(LC(TAB)) &inc_dec_kp LC(GRAVE) LS(LC(GRAVE)) &inc_dec_kp F18 F19>;
