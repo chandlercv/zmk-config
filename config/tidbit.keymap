@@ -35,19 +35,26 @@
 
 /{
     behaviors {
-        td0: save {
+        td_save: save {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LC(S)>, <&kp LC(LS(S))>, <&kp LC(LA(S))>;
         };
 
-        td1: new {
+        td_new: new {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LC(N)>, <&kp LC(LS(N))>;
         };
+
+        td_close: close {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LC(W)>, <&kp LA(F4)>;
+        }
 
         rgb_bright: rgb_bright {
             compatible = "zmk,behavior-sensor-rotate";
@@ -73,9 +80,9 @@
 
         default_layer {
             bindings = <
-                            &kp LC(X)       &kp F24         &td1
-                &kp F20     &kp LC(W)       &kp LS(LC(T))   &td0
-                &kp LA(X)   &kp F21         &kp F22         &kp LC(S)
+                            &kp LC(X)       &kp F24         &td_new
+                &kp F20     &td_close       &kp LS(LC(T))   &td_save
+                &kp LA(X)   &kp F21         &kp F22         &td_save
                 &kp LA(X)   &kp F15         &kp F20         &lt 1 F23
                 &kp LG(UP)  &kp F13         &kp F14         &kp LC(C)
             >;
