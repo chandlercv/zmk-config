@@ -109,7 +109,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LG(N), <&kp LG(LC(N))>, <&kp K_MENU>;
+            bindings = <&kp LG(N)>, <&kp LG(LC(N))>, <&kp K_MENU>;
         };
 
         rgb_bright: rgb_bright {
