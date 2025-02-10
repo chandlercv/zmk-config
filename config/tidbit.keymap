@@ -77,13 +77,6 @@
             bindings = <&kp F15>, <&kp LC(F15)>;
         };
 
-        td_f20: f20 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp F20>, <&kp LC(F20)>;
-        };
-
         td_f21: f21 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -98,11 +91,25 @@
             bindings = <&kp F22>, <&kp LC(F22)>;
         };
 
+        td_f23: f23 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp F23>, <&kp LC(F23)>;
+        };
+
         td_f24: f24 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp F24>, <&kp LC(F24)>;
+        };
+
+        td_app: AppMenu {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LC(K_MENU)>, <&kp LA(K_MENU)>, <&kp K_MENU>;
         };
 
         rgb_bright: rgb_bright {
@@ -129,10 +136,10 @@
 
         default_layer {
             bindings = <
-                            &kp LC(X)       &td_f24         &td_new
-                &td_f20     &td_close       &kp LS(LC(T))   &td_save
+                            &kp LC(X)       &td_app         &td_new
+                &kp F20     &td_close       &kp LS(LC(T))   &td_save
                 &kp LA(X)   &td_f21         &td_f22         &td_save
-                &kp LA(X)   &td_f15         &td_f20         &lt 1 F23
+                &kp LA(X)   &td_f15         &td_f23         &lt 1 F24
                 &kp LG(UP)  &td_f13         &td_f14         &kp LC(C)
             >;
 
