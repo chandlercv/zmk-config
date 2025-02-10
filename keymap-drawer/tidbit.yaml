@@ -10,12 +10,12 @@ layers:
   - '$$mdi:content-save-outline$$'
   - '$$mdi:arrow-right-top$$'
   - '$$mdi:note-text-outline$$'
-  - '$$mdi:calendar-text-outline'
+  - '$$mdi:calendar-text-outline$$'
   - '$$mdi:content-save-outline$$'
   - '$$mdi:arrow-right-top$$'
   - '$$mdi:microsoft-visual-studio-code$$'
   - '$$mdi:google-chrome$$'
-  - {t: F23, h: func}
+  - {t: F24, h: func}
   - '$$mdi:window-maximize$$'
   - '$$mdi:slack$$'
   - '$$mdi:video-outline$$'
