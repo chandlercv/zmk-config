@@ -36,7 +36,7 @@ layers:
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {type: held}
-  - '$$mdi:volume-mute$$'
+  - MUTE
   - OUT TOG
   - BT PRV
   - BT NXT
